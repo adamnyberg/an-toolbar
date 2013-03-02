@@ -1,0 +1,16 @@
+.an-toolbar{
+	width: 200px;
+	background-color: #696969;
+}
+.an-toolbar>ul{
+	margin: 0px;
+
+}
+.an-toolbar>ul>li{
+	float: left;
+	list-style: none;
+
+}
+.dropdown-menu>li{
+	float: none;
+}
