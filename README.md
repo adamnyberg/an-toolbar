@@ -7,20 +7,14 @@ an-toolbar
 
 A jQuery plugin to make a toolbar responsive and collapse in a smart way.
 
-## Demo
-
-To see the plugin in action visit the plugin [site](http://adamnyberg.se/project/an-toolbar).
-
 ## Dependency
 
 -   [jQuery](https://github.com/jquery/jquery)
 -   [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
 
-## Install
+## Usage
 
 Download the plugin and include the following in your HTML file:
-
-1. Include required javascript.
 
 ````html
   <script src="path/to/js/jquery.min.js"></script>
@@ -28,26 +22,48 @@ Download the plugin and include the following in your HTML file:
   <script src="path/to/js/jquery.an-toolbar.min.js"></script>
 ````
 
-2. Make sure you use the right toolbar syntax. The following is an example of how the toolbar HTML markup may look like.
+Make sure you use the right [toolbar](http://twitter.github.com/bootstrap/components.html#buttonGroups) syntax. The following is an example of how the toolbar HTML markup may look like.
 
 ````html
-  <div class="container-of-toolbar">
-    <ul>
-      <li><a href="#" class="btn">Create</a></li>
-      <li><a href="#" class="btn">Update</a></li>
-      <li><a href="#" class="btn">Delete</a></li>
-      <li><a href="#" class="btn">Refresh</a></li>
-      <li><a href="#" class="btn">Settings</a></li>
-    </ul>
+<div id="an-toolbar" class="btn-toolbar">
+  <div class="btn-group">
+    <button class="btn"><i class="icon-"></i> Create</button>
+    <button class="btn"><i class="icon-"></i> Update</button>
+    <button class="btn"><i class="icon-trash"></i> Delete</button>
+    <button class="btn"><i class="icon-refresh"></i> Refresh</button>
+    <button class="btn"><i class="icon-cog"></i> Settings</button>
   </div>
+  <div class="btn-group">
+    <button class="btn">Left</button>
+    <button class="btn">Middle</button>
+    <button class="btn">Right</button>
+  </div>
+  <button class="btn"><i class="icon-search"></i> Search</button>
+</div>
 ````
-
-## Usage
-
-To use it just include the following in your HTML file:
+And lastly just include the following in your HTML file:
 
 ````javascript
-$('.container-of-toolbar').anToolbar();
+$('#an-toolbar').anToolbar();
+````
+
+## Options
+Bellow are all options represented and their default values. 
+
+````javascript
+$('#an-toolbar').anToolbar({
+  // Adds css class to item when moved into dropdown
+  addClass: '',
+
+  // Removes css class to item when moved into dropdown
+  removeClass: 'btn',
+
+  // Set position of dropdown
+  dropdownPosition: 'right',
+
+  // Decide if buttons should be moved from last or first
+  move: 'last'
+});
 ````
 
 ## Contact
