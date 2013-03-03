@@ -35,7 +35,7 @@
                 // Set position of dropdown
                 dropdownPosition: 'right',
 
-                // Decide if items should be moved from last or first
+                // Decide if buttons should be moved from last or first
                 move: 'last'
             };
 
