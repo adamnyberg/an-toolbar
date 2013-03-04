@@ -29,14 +29,17 @@
                 // Adds css class to item when moved into dropdown
                 addClass: '',
 
-                // Removes css class to item when moved into dropdown
-                removeClass: 'btn',
+                // Adds a divider in dropdown for btn-groups
+                divider: true,
 
                 // Set position of dropdown
                 dropdownPosition: 'right',
 
                 // Decide if buttons should be moved from last or first
-                move: 'last'
+                move: 'last',
+
+                // Removes css class to item when moved into dropdown
+                removeClass: 'btn'
             };
 
             // Extend default options
@@ -73,8 +76,8 @@
 
                 // If tool is btn-group, add all btn to dropdown
                 if (tool.hasClass('btn-group')){
-                    // Add divider if dropdown is not empty
-                    if (!dropdownMenu.is(':empty')){
+                    // Add divider if dropdown is not empty and activated
+                    if (!dropdownMenu.is(':empty') && $.fn.anToolbar.defaults.divider){
                         dropdownMenu.prepend($('<li class="divider"></li>'));
                     }
                     tool.children().each(function(key, value){

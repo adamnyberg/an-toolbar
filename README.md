@@ -55,14 +55,17 @@ $('#an-toolbar').anToolbar({
   // Adds css class to item when moved into dropdown
   addClass: '',
 
-  // Removes css class to item when moved into dropdown
-  removeClass: 'btn',
+  // Adds a divider in dropdown for btn-groups
+  divider: true,
 
   // Set position of dropdown
   dropdownPosition: 'right',
 
   // Decide if buttons should be moved from last or first
-  move: 'last'
+  move: 'last',
+
+  // Removes css class to item when moved into dropdown
+  removeClass: 'btn'
 });
 ````
 
