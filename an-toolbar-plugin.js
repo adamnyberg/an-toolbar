@@ -33,6 +33,9 @@
                 divider: true,
 
                 // Set position of dropdown
+                dropdownHTML: '<i class="icon-chevron-down"></i>',
+
+                // Set position of dropdown
                 dropdownPosition: 'right',
 
                 // Decide if buttons should be moved from last or first
@@ -56,7 +59,9 @@
 
             // Check if need to add dropdown
             if ($(this).width() < width){
-                dropdown = '<div class="dropdown btn-group"><a class="dropdown-toggle btn" role="button" data-toggle="dropdown" href="#"><i class="icon-chevron-down"></i></a><ul class="dropdown-menu" role="menu"></ul></div>';
+                dropdown = '<div class="dropdown btn-group"><a class="dropdown-toggle btn" role="button" data-toggle="dropdown" href="#">' +
+                    $.fn.anToolbar.defaults.dropdownHTML +
+                    '</a><ul class="dropdown-menu" role="menu"></ul></div>';
 
                 // Decide side of dropdown
                 if (options.dropdownPosition == 'right'){
