@@ -7,6 +7,9 @@ an-toolbar
 
 A jQuery plugin to make a toolbar responsive and collapse in a smart way.
 
+## Demo
+Se the live demo [here](http://adamnyberg.github.com/an-toolbar/).
+
 ## Dependency
 
 -   [jQuery](https://github.com/jquery/jquery)
