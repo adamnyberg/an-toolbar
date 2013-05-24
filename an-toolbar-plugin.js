@@ -32,7 +32,7 @@
                 // Adds a divider in dropdown for btn-groups
                 divider: true,
 
-                // Set position of dropdown
+                // Set HTML of dropdown button
                 dropdownHTML: '<i class="icon-chevron-down"></i>',
 
                 // Set position of dropdown
